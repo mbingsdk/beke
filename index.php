@@ -7,7 +7,7 @@ $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $replyToken = $client->parseEvents()[0]['replyToken'];
 $message 	= $client->parseEvents()[0]['message'];
 $msg_type = $message['type'];
-$botname = "KerangAjaib"; //Nama bot
+$botname = "Kambing Jones"; //Nama bot
 
 function send($input, $rt){
     $send = array(
@@ -28,6 +28,10 @@ function jawabs(){
 		'Tidak',
 		'Bisa jadi',
 		'Mungkin',
+	    	'Bacot',
+	    	'Brisik',
+	    	'Eeq Lu',
+	    	'Mbing Ganteng',
 		'Tentu tidak',
 		'Coba tanya lagi'
 		);
@@ -37,7 +41,7 @@ function jawabs(){
 }
 
 if($msg_type == 'text'){
-    $pesan_datang = strtolower($message['text']);
+    $pesan_datang = strtolower($message['Hai Salken']);
     $filter = explode(' ', $pesan_datang);
     if($filter[0] == 'apakah') {
         $balas = send(jawabs(), $replyToken);
