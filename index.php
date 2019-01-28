@@ -41,7 +41,7 @@ function jawabs(){
 }
 
 if($msg_type == 'text'){
-    $pesan_datang = strtolower($message['Hai Salken']);
+    $pesan_datang = strtolower($message['text']);
     $filter = explode(' ', $pesan_datang);
     if($filter[0] == 'apakah') {
         $balas = send(jawabs(), $replyToken);
