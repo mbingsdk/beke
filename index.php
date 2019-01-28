@@ -29,6 +29,8 @@ function jawabs(){
 		'Bisa jadi',
 		'Mungkin',
 	    	'Bacot',
+	    	'Nanya apaan',
+	    	'Tanyakan Sama Rumput Yang Berjoged aduh aduh Syantik Unch',
 	    	'Brisik',
 	    	'Eeq Lu',
 	    	'Mbing Ganteng',
@@ -43,7 +45,7 @@ function jawabs(){
 if($msg_type == 'text'){
     $pesan_datang = strtolower($message['text']);
     $filter = explode(' ', $pesan_datang);
-    if($filter[0] == 'apakah') {
+    if($filter[0] == 'apakah','apa','bisakah') {
         $balas = send(jawabs(), $replyToken);
     } else {}
 } else {}
