@@ -34,6 +34,7 @@ function jawabs(){
 	    	'Brisik',
 	    	'Eeq Lu',
 	    	'Mbing Ganteng',
+	    	'Idihh Kepo',
 		'Tentu tidak',
 		'Coba tanya lagi'
 		);
@@ -45,7 +46,7 @@ function jawabs(){
 if($msg_type == 'text'){
     $pesan_datang = strtolower($message['text']);
     $filter = explode(' ', $pesan_datang);
-    if($filter[0] == 'apakah','apa','bisakah') {
+    if($filter[0] == 'apakah') {
         $balas = send(jawabs(), $replyToken);
     } else {}
 } else {}
