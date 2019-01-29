@@ -35,6 +35,11 @@ function jawabs(){
 	    	'Eeq Lu',
 	    	'Mbing Ganteng',
 	    	'Idihh Kepo',
+		'Kambing lagi kesel kak',
+		'Kambing males jawab',
+		'Nanya Sama Kambing kak?',
+		'Kambing nanya balik dulu, kakak mau temenan sama kambing gk?',
+		'Nanya mulu, Add Kambing dong',
 		'Tentu tidak',
 		'Coba tanya lagi'
 		);
